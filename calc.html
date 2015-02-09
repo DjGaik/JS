@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Калькулятор</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Calculator by Gaik</h1>
+	<ul>
+		<li>
+			<input id="firstValue" size="30" placeholder=" Введите первое значение ">
+		</li>
+		<li>
+			<input id="secondValue" size="30" placeholder=" Введите второе значение ">
+		</li>
+		<li>
+			<input type="button" value=" + " onclick="plus()">
+			<input type="button" value=" - " onclick="minus()">
+			<input type="button" value=" * " onclick="umn()">
+			<input type="button" value=" / " onclick="del()">
+			<input type="button" name="btnClearEntry" value=" CE " onclick="ClearEntry()">
+		</li>
+		<li>
+			<input id="result" size="30" placeholder=" Получите ответ ">
+		</li>
+	</ul>
+
+	<script language="JavaScript">
+
+		function plus() {
+			result.value=firstValue.value-(-1)*secondValue.value;
+		}
+
+		function minus() {
+			result.value=firstValue.value-secondValue.value;
+		}
+
+	 	function umn() {
+			result.value=firstValue.value*secondValue.value;
+		}
+
+		function del() {
+			result.value=firstValue.value/secondValue.value;
+		}
+		function ClearEntry () {
+			firstValue.value = "";
+			secondValue.value = "";
+			result.value = "";
+		}
+
+	</script>
+
+</body>
+</html> 
