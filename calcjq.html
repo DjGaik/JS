@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Калькулятор</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Calculator by Gaik</h1>
+	<ul>
+		<li>
+			<input id="firstValue" size="30" placeholder=" Введите первое значение ">
+		</li>
+		<li>
+			<input id="secondValue" size="30" placeholder=" Введите второе значение ">
+		</li>
+		<li>
+			<input type="button" value=" + " class="plus">
+			<input type="button" value=" - " class="minus">
+			<input type="button" value=" * " class="umnn">
+			<input type="button" value=" / " class="del">
+			<input type="button" name="btnClearEntry" value=" CE " class="clear">
+		</li>
+		<li>
+			<input id="result" size="30" placeholder=" Получите ответ ">
+		</li>
+	</ul>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+
+
+		$('.plus').click(function(){
+			result.value=firstValue.value-(-1)*secondValue.value;
+		});
+
+		$('.minus').click(function(){
+			result.value=firstValue.value-secondValue.value;
+		});
+
+		$('.umn').click(function(){
+			result.value=firstValue.value*secondValue.value;
+		});
+
+		$('.del').click(function(){
+			result.value=firstValue.value/secondValue.value;
+		});
+
+		$('.clear').click(function () {
+			firstValue.value = "";
+			secondValue.value = "";
+			result.value = "";
+		});
+
+
+	</script>
+
+</body>
+</html> 
